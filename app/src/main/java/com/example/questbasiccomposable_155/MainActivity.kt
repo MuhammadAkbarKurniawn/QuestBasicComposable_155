@@ -14,6 +14,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -45,6 +46,7 @@ fun BasicCompos(modifier: Modifier = Modifier){
     ) {
         Text("Login", fontSize = 50.sp, fontWeight = FontWeight.Bold)
         Spacer(modifier = Modifier.padding(10.dp))
+        Text("Ini adalah halaman Login", fontSize = 30.sp, fontStyle = FontStyle.Italic)
     }
 }
 
