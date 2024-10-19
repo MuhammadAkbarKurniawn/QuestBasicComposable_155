@@ -18,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -59,7 +60,8 @@ fun BasicCompos(modifier: Modifier = Modifier){
                 .size(300.dp)
                 .clip(CircleShape))
         Text("Nama", fontSize = 20.sp)
-        Text("Muhammad Akbar Kurniawan", fontSize = 25.sp)
+        Text("Muhammad Akbar Kurniawan", fontSize = 25.sp, color = Color.Blue, fontWeight = FontWeight.Bold)
+        Text("20220140155", fontSize = 40.sp)
     }
 }
 
