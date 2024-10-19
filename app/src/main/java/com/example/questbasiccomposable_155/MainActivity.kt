@@ -62,6 +62,11 @@ fun BasicCompos(modifier: Modifier = Modifier){
         Text("Nama", fontSize = 20.sp)
         Text("Muhammad Akbar Kurniawan", fontSize = 25.sp, color = Color.Blue, fontWeight = FontWeight.Bold)
         Text("20220140155", fontSize = 40.sp)
+        Image(painter = painterResource(id = R.drawable.aku),
+            contentDescription = "",
+            modifier = Modifier
+                .size(200.dp)
+                .clip(CircleShape))
     }
 }
 
