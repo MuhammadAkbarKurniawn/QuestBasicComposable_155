@@ -58,6 +58,8 @@ fun BasicCompos(modifier: Modifier = Modifier){
             modifier = Modifier
                 .size(300.dp)
                 .clip(CircleShape))
+        Text("Nama", fontSize = 20.sp)
+        Text("Muhammad Akbar Kurniawan", fontSize = 25.sp)
     }
 }
 
