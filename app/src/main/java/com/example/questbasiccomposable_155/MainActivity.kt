@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -46,15 +47,17 @@ fun BasicCompos(modifier: Modifier = Modifier){
         verticalArrangement = Arrangement.Top,
         modifier = Modifier
             .fillMaxSize()
-            .padding(top = 45.dp)
+            .padding(top = 30.dp)
     ) {
         Text("Login", fontSize = 50.sp, fontWeight = FontWeight.Bold)
         Spacer(modifier = Modifier.padding(10.dp))
         Text("Ini adalah halaman Login", fontSize = 30.sp, fontStyle = FontStyle.Italic)
-        Spacer(modifier = Modifier.padding(10.dp))
+        Spacer(modifier = Modifier.padding(5.dp))
         Image(painter = painterResource(id = R.drawable.logoumy1),
             contentDescription = "",
-            modifier = Modifier.clip(CircleShape))
+            modifier = Modifier
+                .size(300.dp)
+                .clip(CircleShape))
     }
 }
 
