@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -65,7 +66,7 @@ fun BasicCompos(modifier: Modifier = Modifier){
         Image(painter = painterResource(id = R.drawable.aku),
             contentDescription = "",
             modifier = Modifier
-                .size(200.dp)
+                .size(300.dp)
                 .clip(CircleShape))
     }
 }
